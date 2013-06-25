@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">xCalc</string>
+    
+    <!-- Strings for the menu items -->  
+    <string name="menu_settings">Settings</string>
+	<string name="menu_title_add">Plus (+)</string>
+    <string name="menu_title_condensed_add">+</string>
+    <string name="menu_title_minus">Minus (-)</string>
+    <string name="menu_title_condensed_minus">-</string>
+    <string name="menu_title_multiply">Mal (*)</string>
+    <string name="menu_title_condensed_multiply">*</string>
+    <string name="menu_title_divide">Teilen (/)</string>
+    <string name="menu_title_condensed_divide">/</string>
+    
+    <!-- Describes what the app does. -->
+    <string name="textDescription">Rechner addiert zwei Zahlen</string>
+
+    <!-- Texts for the fields -->
+    <string name="textZahl1">Zahl 1:</string>
+    <string name="textHintZahl1">Geben sie hier Zahl 1 ein.</string>
+    <string name="textZahl2">Zahl 2:</string>
+    <string name="textHintZahl2">Geben sie hier Zahl 2 ein.</string>
+    <string name="textErgebnis">Ergebnis:</string>
+    <string name="textErgebnisZahl">Hier steht das Ergebnis.</string>
+    <string name="buttonRechne">Rechne!</string>
+    <!-- Texts for the calculation modes -->
+    <string name="textCalcMode">Rechenmodus</string>
+    <string name="textCalcModeAdd">Addiere</string>
+    <string name="textCalcModeSubstract">Minus</string>
+    <string name="textCalcModeMultiply">Mal</string>
+    <string name="textCalcModeDivide">Teilen</string>
+
+    <!-- Texts for the Status Line -->
+    <string name="textSLEmpty"></string>
+    <string name="textSLErrorMenuItem">Error! Could not handle menu item.</string>
+    <string name="textSLErrorParseZahl1">Error! Could not parse Zahl1.</string>
+    <string name="textSLErrorParseZahl2">Error! Could not parse Zahl2.</string>
+    <string name="textSLErrorCalcMode">Error! Something with Calc Mode.</string>
+    <string name="textSLErrorInternalMenuInflation">Error! Could not inflate app menue.</string>
+    <string name="textSLErrorDivisionByZero">Error! Division by Zero.</string>
+    <string name="textSLErrorDatabaseAccess">Error! During access of history database.</string>
+    <string name="menu_title_exit">Exit</string>
+    <string name="menu_title_condensed_exit">X</string>
+    <string name="textHistory">Verlauf</string>
+    <string name="buttonHistory">Verlauf</string>
+    
+    
+</resources>

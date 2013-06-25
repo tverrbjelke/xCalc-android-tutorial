@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/textDescription"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textZahl1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/textZahl1"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textZahl2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/textHintZahl2"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/tvStatusLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/textSLEmpty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvErgebnisContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/textErgebnis"
+        android:layout_marginTop="16dp"
+        android:text="@string/textErgebnisZahl"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textZahl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textDescription"
+        android:layout_below="@+id/textDescription"
+        android:text="@string/textZahl1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textZahl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textZahl1"
+        android:layout_below="@+id/editText1"
+        android:text="@string/textZahl2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonRechne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="buttonRechneOnClick"
+        android:text="@string/buttonRechne" />
+
+    <TextView
+        android:id="@+id/textErgebnis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textZahl2"
+        android:layout_below="@+id/buttonRechne"
+        android:scrollHorizontally="true"
+        android:text="@string/textErgebnis"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCalcModeContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCalculationMode"
+        android:layout_alignBottom="@+id/tvCalculationMode"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/tvCalculationMode"
+        android:text="@string/textCalcModeAdd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCalculationMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvStatusLine"
+        android:layout_alignParentLeft="true"
+        android:text="@string/textCalcMode"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRechne"
+        android:layout_alignBottom="@+id/buttonRechne"
+        android:layout_toRightOf="@+id/buttonRechne"
+        android:text="@string/buttonHistory" 
+    	android:onClick="buttonHistoryOnClick" />
+
+</RelativeLayout>

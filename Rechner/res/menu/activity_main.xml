@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <group android:id="@+id/operationen" android:enabled="true" android:visible="true" android:menuCategory="container">
+        <item android:id="@+id/menu_add" android:title="@string/menu_title_add" android:visible="true" android:enabled="true" android:titleCondensed="@string/menu_title_condensed_add"></item>
+        <item android:id="@+id/menu_minus" android:checked="true" android:titleCondensed="@string/menu_title_condensed_minus" android:title="@string/menu_title_minus" android:visible="true"></item>
+        <item android:id="@+id/menu_multiply" android:titleCondensed="@string/menu_title_condensed_multiply" android:title="@string/menu_title_multiply" android:visible="true" android:enabled="true"></item>
+        <item android:id="@+id/menu_divide" android:titleCondensed="@string/menu_title_condensed_divide" android:title="@string/menu_title_divide" android:visible="true" android:enabled="true"></item>
+    </group>
+    
+    <item android:id="@+id/menu_exit" android:titleCondensed="@string/menu_title_condensed_exit" android:title="@string/menu_title_exit" android:visible="true" android:enabled="true"></item>
+
+</menu>
